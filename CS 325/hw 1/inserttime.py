@@ -12,8 +12,8 @@ def insertSort(arr):
 from numpy import random # random
 import time
 
-n = 5000 # start at 5000
-while n < 50001:
+n = 2000 # start at 2000
+while n <= 20000:
   i = 0
   arr = []
   while i < n:
@@ -22,4 +22,4 @@ while n < 50001:
   start_time = time.time()
   insertSort(arr)
   print("{}: {}".format(n, time.time() - start_time))
-  n += 5000
+  n += 2000
