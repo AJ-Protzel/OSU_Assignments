@@ -1,0 +1,37 @@
+1. Retrieve the first and last names of employees that work in department 1 or department 5. 
+DEP1 <- π Fname, Lname (σ Dno = 1 (EMPLOYEE))
+DEP5 <- π Fname, Lname (σ Dno = 5 (EMPLOYEE))
+RESULT <- (DEP1 U DEP5)
+
+2. Retrieve the names of all departments with a location in ‘Houston’.
+DEP1 <- π Dname (σ Dnumber = 1 (DEPARTMENT))
+DEP5 <- π Dname (σ Dnumber = 5 (DEPARTMENT))
+RESULT <- (DEP1 U DEP5)
+
+
+
+3. Retrieve the SSNs of all employees that work more than 10 hours per week on project number 1.
+π Essn (σ Hours > 10 AND Pno = 1 (WORKS_ON))
+
+4. Retrieve the first and last names of employees in department 5 who work more than 10 hours per week on the 'ProductX' project.
+TABLE <- (WORKS_ON U EMPLOYEE)
+RESULT <- π Fname, Lname (σ Hours > 10 AND Pno = 1 AND Dnumber = 5 (TABLE))
+
+
+
+5. Retrieve the first and last names of employees that are directly supervised by 'Franklin Wong'.
+π Fname, Lname (σ Super_ssn = 333445555 (EMPLOYEE))
+
+6. For each project, list the project name and the total hours per week (by all employees) spent on that project.
+TABLE <- (PROJECT * WORKS_ON)
+RESULT <- π Pname, Pno ℱ SUM Hours (TABLE)
+
+
+
+7. Retrieve the SSNs of employees who work on every project.
+TABLE <- (Essn, Pno WORKS_ON) / (π Pno WORKS_ON)
+π Essn (TABLE)
+
+8. For each department, retrieve the department name, and the average salary of employees working in that department.
+TABLE <- (DEPARTMENT U EMPLOYEE)
+RESULT <- π Dname, Dnumber ℱ AVE Salary (TABLE)

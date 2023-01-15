@@ -1,0 +1,11 @@
+#!/bin/csh
+
+g++ -O3 main.cpp -o main -lm -fopenmp
+
+for t in 1 2 4 8 12 16 20 24 32
+do
+    for n in 1 10 100 1000 10000 100000 500000 1000000
+    do
+        ./main $t $n
+    done
+done

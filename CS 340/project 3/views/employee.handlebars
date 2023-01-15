@@ -1,0 +1,50 @@
+<html>
+    <h3>Current Employees:</h3>
+
+    {{#if PNO}}
+        <h4>Project {{PNO}}: {{Projectname}} located in {{Projectlocation}}</h4>
+    {{/if}}
+
+    <table id='t01'>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Salary</th>
+            <th>Dno</th>
+        </thead>
+
+        <tbody>
+            {{#each employee}} 
+            <tr> 
+                <td>{{Fname}}</td> 
+                <td>{{Lname}}</td> 
+                <td>{{Salary}}</td> 
+                <td>{{Dno}}</td>
+            </tr> 
+            {{/each}} 
+        </tbody> 
+    </table>
+
+    <p>
+
+    <form id='filter_employee' action='' method=''>
+        <label>Filter Employees by Project: </label>
+
+        <select id='project_filter' name='project'>
+            {{#each projects}}
+                <option value="{{Pnumber}}">{{Pname}}</option>
+            {{/each}}
+        </select>
+
+        <input type="button" class="button" value="Filter" onclick="filterByProject()">
+        <a href="/employee" class="button">Clear Filters</a>
+    </form>
+
+    <p>
+
+    <form id='search_emplyee' action='' method =''>
+        <label>Search all employees for first names starting with:</label>
+        <input id='first_name_search_string' type='text' name='Fname' value=''>
+        <input type="button" class="button" value="Search" onclick="searchByFname()">
+    </form>
+</html>

@@ -1,0 +1,17 @@
+How I got the random numbers: 
+I started n (length of array) at 5000 and did a while loop for 10 iterations by adding 5000 after each loop (while n < 50001 : includes the 10th 50000 array).
+
+Within the while loop i created an array arr and made another while loop from 0 to n and appended randomint from 0 to 10000.
+
+I then start time, sortedm then printed.
+
+The arr is then reset and reused on the next n iteration.
+
+Prediction / Comparison:
+my formulas are:
+   insertion => y=n^2/17000000
+   merge => y=0.00001n
+which when entering 20,000 I get
+   insertion => 23.5294117647
+   merge => 0.2
+which are fairly close, which some fine tuning it would be better.

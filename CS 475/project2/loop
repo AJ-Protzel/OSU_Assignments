@@ -1,0 +1,12 @@
+#!/bin/csh
+# bash loop >& out.csv
+
+g++ -O3 main.cpp -o main -lm -fopenmp
+
+for t in 1 2 4 8 12
+do
+    for n in 4 10 100 1000 2000
+    do
+        ./main $t $n
+    done
+done

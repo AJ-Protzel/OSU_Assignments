@@ -1,0 +1,23 @@
+1. uintptr_t: Because it is dereferencing a pointer.
+
+2. 
+1023   0xef400000   Page table for top 4MB of phys memory
+1022   0xef000000   Ro Pages
+1021   0xeec00000   RO ENVS
+1020   0xeebff000   User Exception Stack
+1019   0xeebfe000   Empty Memory (*)
+1018   0xeebfd000   Normal USER Stack
+.
+.
+.
+2      0x00800000   Program Data & Heap
+1      0x00400000   Empty Memory (*)
+0      0x00000000   First physical page
+
+3. When you get a page, its permissions are defined, users have read only while the kernel has read/write.
+
+4. 256MB. This is what is physically mapped for KERNBASE thats is useable to the OS.
+
+5. 4Kb * 1024 page tables * 1 page directory + 4Kb ≈ 4Mb
+
+6. Kernbase is the reserved 4MB for the OS to execute physical addresses passed to it from converted virtual pages that are grabbed from above the offset of 4MB. EIP goes above kernbase+4MB when we need to grab virtual pages above the base to convert and execute. We reserve the 4MB so when we remove a used page we can reuse the space in the base which returns us to a low EIP. Its necessary to have this transmission so that we can reuse the memory after its use.

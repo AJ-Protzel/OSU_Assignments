@@ -1,0 +1,205 @@
+Default Report
+Last Modified: 2022-05-26 15:31:40 MDT
+
+
+Q6 - Please rate how difficult or easy it is to navigate to the event info page and register for Fall Term Brunch event.
+#,Field,Minimum,Maximum,Mean,Std Deviation,Variance,Count
+1,Please rate how difficult or easy it is to navigate to the event info page and register for Fall Term Brunch event.,1.00,7.00,1.85,1.32,1.75,26
+
+#,Answer,%,Count
+1,Extremely easy,50.00%,13
+2,Moderately easy,38.46%,10
+4,Neither easy nor difficult,7.69%,2
+6,Moderately difficult,0.00%,0
+7,Extremely difficult,3.85%,1
+,Total,100%,26
+
+Q10 - Please rate how difficult or easy it is to navigate the app to view your registered events.
+#,Field,Minimum,Maximum,Mean,Std Deviation,Variance,Count
+1,Please rate how difficult or easy it is to navigate the app to view your registered events.,1.00,7.00,2.69,1.68,2.83,26
+
+#,Answer,%,Count
+1,Extremely easy,15.38%,4
+2,Moderately easy,57.69%,15
+4,Neither easy nor difficult,15.38%,4
+6,Moderately difficult,3.85%,1
+7,Extremely difficult,7.69%,2
+,Total,100%,26
+
+Q33 - Did you use the calendar or notifications tab to view your registered events?
+#,Field,Minimum,Maximum,Mean,Std Deviation,Variance,Count
+1,Did you use the calendar or notifications tab to view your registered events?,1.00,3.00,1.38,0.62,0.39,26
+
+#,Answer,%,Count
+1,Calendar,69.23%,18
+2,Notification,23.08%,6
+3,Other,7.69%,2
+,Total,100%,26
+
+Q34 - Please rate how difficult or easy it is to turn off notifications and logout of the app.
+#,Field,Minimum,Maximum,Mean,Std Deviation,Variance,Count
+1,Please rate how difficult or easy it is to turn off notifications and logout of the app.,1.00,5.00,3.40,1.36,1.84,25
+
+#,Answer,%,Count
+1,Extremely difficult,16.00%,4
+2,Somewhat difficult,8.00%,2
+3,Neither easy nor difficult,20.00%,5
+4,Somewhat easy,32.00%,8
+5,Extremely easy,24.00%,6
+,Total,100%,25
+
+Q14 - How would you rate the overall usability of the app?
+#,Field,Minimum,Maximum,Mean,Std Deviation,Variance,Count
+1,How would you rate the overall usability of the app?,1.00,5.00,2.27,0.90,0.81,26
+
+#,Answer,%,Count
+1,Extremely good,11.54%,3
+2,Moderately good,65.38%,17
+3,Neither good nor bad,11.54%,3
+4,Moderately bad,7.69%,2
+5,Extremely bad,3.85%,1
+,Total,100%,26
+
+Q16 - How easy or difficult was it to read the font style and size?
+#,Field,Minimum,Maximum,Mean,Std Deviation,Variance,Count
+1,How easy or difficult was it to read the font style and size?,1.00,5.00,2.35,1.41,2.00,26
+
+#,Answer,%,Count
+1,Extremely easy,42.31%,11
+2,Moderately easy,15.38%,4
+3,Neither easy nor difficult,19.23%,5
+4,Moderately difficult,11.54%,3
+5,Extremely difficult,11.54%,3
+,Total,100%,26
+
+Q18 - How organized or disorganized was the layout on prototype?
+#,Field,Minimum,Maximum,Mean,Std Deviation,Variance,Count
+1,How organized or disorganized was the layout on prototype?,1.00,5.00,2.19,0.88,0.77,26
+
+#,Answer,%,Count
+1,Extremely organized,11.54%,3
+2,Moderately organized,73.08%,19
+3,Neither organized nor disorganized,3.85%,1
+4,Moderately disorganized,7.69%,2
+5,Extremely disorganized,3.85%,1
+,Total,100%,26
+
+"Q36 - Was there a task(s) that were particularly difficult to complete? If so, explain."
+"Was there a task(s) that were particularly difficult to complete? If so, explain."
+"The calendar was weird to navigate on. It kept moving the event but that might be because that was the only event in the prototype. "
+Hitting the back button on the top left of the screen
+I could not turn off the subscription or cancelation notifications (buttons did not work).
+The settings were only available once I clicked in an event. I coupons access the calendar until I was in an event.
+going back was confusing especially in calendar mode.
+Couldn't toggle all notifications (only new event notifications)
+"I don't quite understand what the orange ""plus"" sign in the middle of the toolbar would be used for from a student perspective. Would it be for submitting a new event for the honors college? It could be obvious and I just missed it though!"
+Test Ignore
+Nah
+NA it was pretty simple.
+I could only cancel new event notifications.
+"notifications should be in the notifications tab rather then settings, or both"
+"I think it was weird that I couldn't view the ""home"", ""calendar"" ""settings"" etc, without clicking on an event."
+the registering pat was hard because it takes you out of the site but then on flow 2 it looked like it would keep you in the app?
+"I found everything pretty easy. "
+
+"Q21 - What was difficult to find/missing ((e.g., more text, more images, a FAQ, a question answered, etc.) from the prototype?"
+"What was difficult to find/missing ((e.g., more text, more images, a FAQ, a question answered, etc.) from the prototype?"
+I think the calendar could look more user friendly. Is there a way we can add the events straight to our google calendar from the app?
+There isn’t a menu bar with all of the icons in the Home Screen. I have to enter an event before I can access that functionality.
+"The filter system should have pre-set filters, not something you type out."
+The date for each event is at the end of the line of text. If there was a table when looking at the events I could find the exact date more easily.
+Chronological ordering of events
+"Very straight forward and user friendly. "
+More styling
+Test Ignore
+"The filter should be a drop down menu of sorts with an icon indicating that. It was a bit odd to see it as a search menu. I could also see the search bar as an icon at first (and then when clicked on you could show the search bar). Under settings/profile there should probably be a feature to change the display name and/or change your password and email address. "
+I wish the tool bar with the settings and calendar showed up when I first open the app
+"It would be easier if there were generalized categories that led to the events. EX: Academic Events---- sub category ALA event.  "
+Maybe contact information for the event coordinator?
+"Maybe you could also favorite certain groups so that you could have a tab that says ""favorited events"" and then ""all events"""
+"I dident notice the calender or the notifications tab, the black text over the orange background is hard to read, more immages might be nice"
+
+Q23 - What was your favorite thing about prototype?
+What was your favorite thing about prototype?
+"Great idea! "
+Access to calendar and list view of events
+It collects information about HC events.
+Having a centralized event app will be very helpful. And that there are notifications about when events are created and when one I have signed up for is happening.
+It was pretty easy to find things
+layout of the event info is nice
+You can easily see events you registered for and save the ones you're interested in.
+Easy to see registered and saved events
+"I really like how minimal it is. Even the events website on the main OSU page can be difficult to navigate. I like that the sole function of this app is to communicate events. "
+"Pretty simple navigation, easy to find what I needed"
+I liked the visuals with each event and the important info such as location and time
+Test Ingore
+"The concept is really great and the overall structure seems to flow well. I also liked how you could see how many people registered to attend the event. All the features within the app seem to be well thought out really well, and I also like the transition when clicking on more info for an event."
+It's easier to see things at a glance than the emails. I liked the calendar too
+"The calendar that showed different events on different days. "
+"Prototype overall is decent, although I'm not sure who the target audience is.  Can anyone add an event at anytime, or is this more of student thing where only admin add events and we see/register for what events are available?"
+"The display is very clear, it makes it easy to find events. I also liked the format of the notifications tab."
+The calendar
+I like how it says the type of the even in the corner of all the events. It was relatively easy to use too.
+I liked how easy it was to access all of the events
+Very clean and organized
+
+Q24 - What was your least favorite thing about prototype?
+What was your least favorite thing about prototype?
+The calendar function
+The back button was difficult to press since it was so small.
+"The UI Design. Please use something with more rounded corners and different colors, other than the harsh sharp corners of the boxes. Consider using Material Design, with Cards. It looks like a card-like design is what you were trying to implement, but it is so harsh and clunky to the eyes that it makes it unusable. "
+Some of the navigation to different tabs gets cyclical and I have to use the back button many times to get to the home page
+"The design didn’t look/feel good in my opinion, and animations are a bit odd"
+would recommend colors that are easier to read. maybe do black text on white background and have orange details instead of orange everywhere.
+The flat orange background color is kinda ugly.
+"I'm not sure what exactly it is, but the orange color and font from a graphic design perspective don't quite match the branding the rest of the University uses. That might be fine! But it could make it seem slightly more professional if you tweaked the aesthetic look a little bit. But it is totally functional so that is not that important. "
+"Obviously it follows OSU's colors, but the contrast between bright orange and the black or white text feels harsh on the eyes. Maybe some pastel colors, or using orange more for smaller elements or highlights would be better?"
+The colors
+The search tab hovers over the others when scrolling
+"The design of this for me is a bit distracting. The orange background with the black text is still readable but it feels a bit uncomfortable to read. I’m also not sure if you want to use the exact OSU colors, but those HEX codes and the fonts they use can be found on the branding website. The date and type of the event on the homepage gets a bit lost, and in the event description there’s a bit of a lack of hierarchy since all the text is the bolder black font within a white box. My eyes go towards the description first since that’s the biggest box on the screen, but then my eyes don’t know where to go from there."
+The toolbar only showed up after clicking on an event
+"The color isn't the correct color to the OSU color scheme, the font is to blocky and looks hard to the eyes. Also the black on orange is a lot design wise, it would be better if it matched the current Osu app where its orange on white with black on white sub text. I also think that the app should have a way to connect to a phones apple/android calendar so that the user can be notified both ways about an upcoming event. It's a great app with some things that could be more user friendly, mostly in the design.  "
+"Settings should not be the second thing on the menu, as it's a tertiary action at best.  All notification, logout, etc. stuff should be hidden behind one icon or in a menu."
+"Sometimes hitting the back arrow didn't do anything, so I just switched back and forth from the home screen instead."
+the desigine style was anoying and it would be nice it it coulf conect directly to my google calender sense thats what I usually use.
+"Clean to the point that it was not immediately obvious where things might be, but it was easy enough to figure out. "
+
+"Q25 - On a scale from 0-10, based on your experience today, how likely are you to use this application in its current form?"
+
+
+Q26 - Please leave any additional comments about how we can improve the Honors App in the space provided below.
+Please leave any additional comments about how we can improve the Honors App in the space provided below.
+"Have all university events on it, and not just honors ie the website with all the events going on. Also make it able to add events to our google calendars."
+All text is bold which is very daunting to read. No menu bar in Home Screen.
+"Make sure you make the app accessible so that disabled students who may use screenreaders, or people who may need the font size adjusted can use the app"
+"The functionality of this App could be useful, but the UI makes it all but unusable."
+"Have the date of the event in close proximity but not in the line of texted with the event title will add to usability. Having the settings available on the home page too. Maybe having a navigation side bar with settings, calendar and such will be more seamless for finding where to go."
+"Hi! I’m OSU student and have a lot of experience making iOS apps. I’m guessing you’re another student, and I would love to help with the development and design, or even the process for publishing the application. Overall, I’d love to get in touch with you! Just send me an email at elliotol@oregonstate.edu"
+"-include time in registered events
+-would recommend changing the back arrow icon to be more prominent and clear
+-add a gear in the upper right of the notification section to go to notif. settings
+-the bold outlines of the boxes, especially in the event info page is not the easiest to look at
+
+Calendar section
+-calendar is spelled wrong
+-the arrow next to 2022: idk if it changes the year or the month. you can add arrows on either side of the month to scroll through the months. also its nice to be able to scroll to the sides to switch months
+-the arrow next to 2022 makes it seem like i would use that to go back because the actual back arrow is a lot smaller
+
+overall pretty good, some things would benefit from change. I hope this feedback helps!"
+Maybe you could include a place to input your class schedule so you can compare it to event times?
+I’m graduating so I’m not likely to use the app ever
+"The reason I gave this a lower score is because of the design. I would use this app if I needed to, but the design right now could be improved for usability, as well as aesthetic. "
+"I really think that this is a great idea that's more digestible then the Monday message. However, it needs a little bit of fine tuning. "
+"How about if you hit the same button again it takes you back to the home page? Like the default is home and if I hit the settings I go to settings, but then if I hit it again it would be convenient if it took me back to the home page, like a toggle of some kind."
+
+Website
+Data source misconfigured for this visualization
+
+Answer,%,Count
+Total,,
+
+Enter Embedded Data Field Name Here...
+Data source misconfigured for this visualization
+
+Answer,%,Count
+Total,,

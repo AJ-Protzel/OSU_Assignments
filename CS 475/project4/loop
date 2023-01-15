@@ -1,0 +1,9 @@
+#!/bin/csh
+# tr -d '\r' < loop1 > loop
+# bash loop >& out.csv
+
+for s in 1024 2048 8192 32768 131072 524288 2097152 8388608
+do
+    g++ -DARRAYSIZE=$s -o3 main.cpp -o main -lm -fopenmp
+    ./main
+done

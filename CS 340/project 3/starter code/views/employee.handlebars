@@ -1,0 +1,27 @@
+<html>
+    <h3>Current Employees:</h3>
+
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Salary</th>
+            <th>Dno</th>
+        </thead>
+
+        <tbody>
+            {{#each employee}} 
+            <tr> 
+                <td>{{Fname}}</td> 
+                <td>{{Lname}}</td> 
+                <td>{{Salary}}</td> 
+                <td>{{Dno}}</td>
+            </tr> 
+            {{/each}} 
+        </tbody> 
+    </table>
+
+    {{!-- filter employees button here --}}
+
+    {{!-- search employee by name button here --}}
+</html>
