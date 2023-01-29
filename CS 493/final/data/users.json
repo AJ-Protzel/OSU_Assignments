@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "name": "Marwin Aston",
+        "email": "aston@gmail.com",
+        "password": "hunter2",
+        "role": "student"
+    },
+    {
+        "id": 2,
+        "name": "Rowland Wash",
+        "email": "wash@gmail.com",
+        "password": "hunter2",
+        "role": "instructor"
+    },
+    {
+        "id": 3,
+        "name": "Eun-U Winter",
+        "email": "winter@gmail.com",
+        "password": "hunter2",
+        "role": "admin"
+    },
+    {
+        "id": 4,
+        "name": "Ryuu Deniaud",
+        "email": "ryuu@gmail.com",
+        "password": "hunter2",
+        "role": "student"
+    },
+    {
+        "id": 5,
+        "name": "Ryuu Deniaud",
+        "email": "ryuu@gmail.com",
+        "password": "hunter2",
+        "role": "instructor"
+    },
+    {
+        "id": 6,
+        "name": "Jessica Pierce",
+        "email": "pierce@gmail.com",
+        "password": "hunter2",
+        "role": "student"
+    },
+    {
+        "id": 7,
+        "name": "Jessica Pierce",
+        "email": "pierce@gmail.com",
+        "password": "hunter2",
+        "role": "admin"
+    },
+    {
+        "id": 8,
+        "name": "Shae Dallas",
+        "email": "dallas@gmail.com",
+        "password": "hunter2",
+        "role": "instructor"
+    },
+    {
+        "id": 9,
+        "name": "Shae Dallas",
+        "email": "dallas@gmail.com",
+        "password": "hunter2",
+        "role": "admin"
+    },
+    {
+        "id": 10,
+        "name": "Rob Hess",
+        "email": "hess@gmail.com",
+        "password": "hunter2",
+        "role": "instructor"
+    },
+    {
+        "id": 11,
+        "name": "Adrien Protzel",
+        "email": "protzel@gmail.com",
+        "password": "hunter2",
+        "role": "instructor"
+    }
+]

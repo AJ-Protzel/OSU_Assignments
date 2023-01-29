@@ -1,0 +1,54 @@
+# export MONGO_USER=root
+# export MONGO_PASSWORD=hunter2
+# export MONGO_HOST=localhost
+# export MONGO_AUTH_DB_NAME=admin
+
+services:
+  db:
+    image: mongo
+    ports:
+      - 27017:27017 # explose DB
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_DB_NAME}
+  rate-limiting:
+    image: redis
+    command: redis-server
+    ports:
+      - 6379:6379 # explose REDIS
+
+  db-init:
+    build: .
+    environment:
+      MONGO_HOST: db
+      MONGO_USER: ${MONGO_ROOT_USER}
+      MONGO_PASSWORD: ${MONGO_ROOT_PASSWORD}
+      MONGO_DB_NAME: ${MONGO_DB_NAME}
+      MONGO_AUTH_DB_NAME: admin
+      MONGO_CREATE_USER: ${MONGO_USER}
+      MONGO_CREATE_PASSWORD: ${MONGO_PASSWORD}
+    depends_on:
+      - db
+      - rate-limiting
+    restart: on-failure
+    command: npm run initdb
+
+  api:
+    build: .
+    links:
+      - rate-limiting
+    ports:
+      - 9000:9000 # for ease of use
+    environment:
+      MONGO_HOST: db
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      MONGO_DB_NAME: ${MONGO_DB_NAME}
+      REDIS_URL: redis://rate-limiting
+    depends_on:
+      - db
+      - db-init
+      - rate-limiting
+    restart: on-failure
+

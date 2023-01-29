@@ -1,6 +1,3 @@
-node server.js
-localhost:3000
-
 CS 290 Final Project
 Code and demo due by 5:00pm on Thursday, 12/12/2019
 In this course, a final programming project will take the place of formal exams to test your understanding of the material.  The final project will involve working with a team of 3-4 people to implement a substantial web app that utilizes all of the major components of the web application stack covered in this class.  Specifically, you and your teammates will write a web app that satisfies all of these requirements:

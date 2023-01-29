@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_forecast_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="Jan"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/tv_forecast_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_forecast_month"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="35sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tv_forecast_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_forecast_date"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tv_forecast_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_forecast_date"
+            android:layout_below="@id/tv_forecast_desc"
+            android:layout_marginHorizontal="8dp"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="#429bb8"/>
+
+        <TextView
+            android:id="@+id/tv_forecast_precip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/tv_forecast_high"
+            android:layout_toEndOf="@id/tv_forecast_low"
+            android:layout_below="@id/tv_forecast_desc"
+            android:layout_marginHorizontal="8dp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tv_forecast_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_forecast_desc"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="60dp"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="#FF0000"/>
+
+        <TextView
+            android:id="@+id/tv_forecast_summ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

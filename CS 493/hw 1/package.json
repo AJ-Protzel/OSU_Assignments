@@ -1,0 +1,27 @@
+{
+  "name": "server-setup",
+  "version": "1.0.0",
+  "description": "Server with Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs493-sp22/assignment-1-AJ-Protzel.git"
+  },
+  "author": "Adrien <protzela@oregonstate.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osu-cs493-sp22/assignment-1-AJ-Protzel/issues"
+  },
+  "homepage": "https://github.com/osu-cs493-sp22/assignment-1-AJ-Protzel#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

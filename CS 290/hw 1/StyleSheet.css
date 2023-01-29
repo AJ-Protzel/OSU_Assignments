@@ -1,0 +1,46 @@
+/*
+ * name: Adrien Protzel
+ * email: protzela@oregonstate.edu
+ */
+/*-----------------------------------------------------------------------Title*/
+header{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: black;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-title{
+  color: white;
+  font-family: Roboto Slab; sans-serif;
+  font-weight: 450;
+  font-size: 80px;
+  text-align: center;
+}
+
+body{
+  background-color: #001935;
+}
+
+.post-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: auto;
+  background-color: #828D9B;
+  font-family: Roboto; sans-serif;
+  padding: 10px;
+  border: 5px solid #000000;
+  border-radius: 10px;
+}
+
+img{
+  max-width:15%;
+  height:auto;
+  margin-top: 10px;
+  transform: rotate(90deg);
+  float: left;
+}

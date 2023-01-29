@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/main_activity">
+
+    <fragment
+        android:id="@+id/main_activity"
+        android:name="com.example.android.roomyweather.ui.MainActivityFragment"
+        android:label="@string/label_main_activity">
+        <action
+            android:id="@+id/navigate_to_forecast_detail"
+            app:destination="@id/forecast_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forecast_detail"
+        android:name="com.example.android.roomyweather.ui.ForecastDetailFragment"
+        android:label="@string/label_forecast_detail">
+        <argument
+            android:name="forecastPeriod"
+            app:argType="com.example.android.roomyweather.data.ForecastPeriod" />
+        <argument
+            android:name="forecastCity"
+            app:argType="com.example.android.roomyweather.data.ForecastCity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.android.roomyweather.ui.SettingsFragment"
+        android:label="@string/label_settings" />
+
+    <fragment
+        android:id="@+id/bookmarked_cities"
+        android:name="com.example.android.roomyweather.ui.BookmarkedCitiesFragment"
+        android:label="@string/label_bookmarked_cities">
+        <action
+            android:id="@+id/navigate_to_main_activity"
+            app:destination="@id/main_activity" />
+    </fragment>
+
+</navigation>

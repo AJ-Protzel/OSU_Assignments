@@ -1,0 +1,47 @@
+# To run:
+# (Delete current docker hw3 container)
+
+# export MYSQL_DB_NAME=hw3
+# export MYSQL_USER=user
+# export MYSQL_PASSWORD=hunter2
+# export MYSQL_HOST=localhost
+
+# docker run -d --name hw3 --network hw3 -p "3306:3306" -e "MYSQL_RANDOM_ROOT_PASSWORD=yes" -e "MYSQL_USER=user" -e "MYSQL_PASSWORD=hunter2" -e "MYSQL_DATABASE=hw3" mysql
+
+# npm run dev
+# (Repeat if connection error)
+
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DB_NAME}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+  db-init:
+    build: .
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DB_NAME: ${MYSQL_DB_NAME}
+    depends_on:
+      - db
+    restart: on-failure
+    command: npm run initdb
+
+  api:
+    build: .
+    ports:
+      - 8000:8000
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DB_NAME: ${MYSQL_DB_NAME}
+    depends_on:
+      - db
+      - db-init
+    restart: on-failure

@@ -1,0 +1,182 @@
+/*
+ * name: Adrien Protzel
+ * email: protzela@oregonstate.edu
+ */
+/*-----------------------------------------------------------------------Title*/
+/*adding black background banner*/
+header{
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 10px;
+}
+
+/*Benny Beaver image positioning*/
+.header-image-container{
+  float: left;
+}
+
+/*Benny's List font formatting*/
+.site-title a{
+  color: white;
+  font-family: Roboto Slab; sans-serif;
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 80px;
+  position: relative;
+  top:40px;
+}
+
+/*I dont know*/
+.content{}
+/*---------------------------------------------------------------Aside Filters*/
+/*moves filter box to side, adding Filters grey box*/
+aside{
+  margin: 10px;
+  margin-bottom: 100%;
+  width: 200px;
+  height: 400px;
+  background-color: rgb(220,220,220);
+  font-family: Roboto; sans-serif;
+  float: left;
+}
+
+/*adds padding within filters box*/
+.filter-container{
+  padding: 10px;
+}
+
+/*segmenting text and input boxes into same lines*/
+.filter-input-container{
+  display: table;
+  width: 100%;
+}
+
+/*formatting text labels to the side, including city*/
+.filter-input-label, label[for=filter-city]{
+  display: table-cell;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/*sizing input boxes*/
+.filter-input-element{
+  display: table-cell;
+  padding: 10px;
+}
+
+/*sizing input boxes width*/
+.filter-input{
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*I dont know*/
+.filter-feildset{}
+
+/*Update button, font formatting*/
+.action-button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+
+  color: white;
+  font-family: Roboto; sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/*Update button hover*/
+.action-button:hover{
+  color: black;
+  background-color: tan;
+}
+/*----------------------------------------------------------------Listed Items*/
+/*Adds boarder boxes, organizes*/
+.result{
+  vertical-align: top;
+  display: inline-block;
+
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(220,220,220);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/*I dont know*/
+.result-contents{}
+
+/*I dont know*/
+.result-image-container{}
+
+/*resizes images*/
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*text alignment*/
+.result-info-container{
+    margin-top: 20px;
+    font-family: Roboto; sans-serif;
+}
+
+/*link font format*/
+.result-title{
+  text-decoration: none;
+  color: rgb(204,102,0);
+}
+
+/*hover over text*/
+.result-title:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*price font format*/
+.result-price{
+  color: black;
+
+  display: inline-block;
+  width: auto;
+  border: 1px solid rgb(128,128,128);
+  text-align: center;
+  background-color: rgb(220,220,220);
+  border-radius: 5px;
+}
+
+/*city font format*/
+.result-city{
+  color: black;
+}
+
+/*plus button*/
+button .fas{
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+
+  background-color: rgb(204,102,0);
+  border-radius: 100%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+
+  bottom:20px;
+  right:20px;
+  position: fixed;
+}
+
+/*hover over button*/
+button .fas:hover{
+  transform: scale(1.15);
+}

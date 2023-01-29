@@ -1,0 +1,32 @@
+These are the install commands I ran in terminal (powershell):
+npm install nodemon
+npm install express
+npm install 
+npm install bcryptjs
+npm install isomorphic-unfetch
+npm install jsonwebtoken
+npm install mongodb
+npm install morgan
+
+Building a Mongo Shell in Terminal (Make sure to have an api and a db server on Docker):
+docker build -t api-server -f Dockerfile .  
+docker build -t db-server -f Dockerfile-db .
+docker run -d --name db-server --network network -p "27017:27017" -e "MONGO_INITDB_ROOT_USERNAME=root" -e "MONGO_INITDB_ROOT_PASSWORD=hunter2" mongo
+docker run --rm -it --network network mongo mongo --host db-server --username root --password hunter2 --authenticationDatabase admin
+
+If you cant log into the server make sure to have the user created in the db (Here is how to do that once logged into the Mongo Shell)
+use final
+[In other powershell terminal] $env:MONGO_USER = 'user'
+[In other powershell terminal] $env:MONGO_PASSWORD = 'hunter2' 
+[In other powershell terminal] $env:MONGO_DB_NAME = 'final'
+db.createUser({user: "user", pwd: "hunter2", roles: [{role: "readWrite", db: "final"}]})
+
+Usesful MongoDB Shell Commands:
+use final
+db.getCollectionNames()
+db.users.find({}).pretty()
+db.users.deleteOne({_id: ObjectId("...")})
+db.courses.find({}).pretty()
+db.courses.deleteOne({_id: ObjectId("...")})
+db.assignments.find({}).pretty()
+db.assignments.deleteOne({_id: ObjectId("...")})

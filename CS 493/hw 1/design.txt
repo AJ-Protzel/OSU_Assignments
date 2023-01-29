@@ -1,0 +1,136 @@
+Add business:
+    POST /businesses{
+        name: "",
+        address: "",
+        city: "",
+        state: "",
+        zip: "",
+        phone: "",
+        category: "",
+        subCategory: "",
+        website: "",
+        email: ""
+    }
+
+Modify business:
+    PATCH /businesses/{id}{
+        name: "",
+        address: "",
+        city: "",
+        state: "",
+        zip: "",
+        phone: "",
+        category: "",
+        subCategory: "",
+        website: "",
+        email: ""
+    }
+
+Remove business:
+    DELETE /businesses/{id}
+
+List businesses:
+    GET /businesses{
+        "businesses": [{
+            id: "",
+            name: "",
+            address: "",
+            city: "",
+            state: "",
+            zip: "",
+            phone: "",
+            category: "",
+            subCategory: "",
+            website: "",
+            email: ""
+        }]{...}
+    }
+
+List business details:
+    GET /businesses{id}{
+        id: "",
+        name: "",
+        address: "",
+        city: "",
+        state: "",
+        zip: "",
+        phone: "",
+        category: "",
+        subCategory: "",
+        website: "",
+        email: "",
+        reviews: "",
+        photos: ""
+    }
+
+Write review:
+    POST /reviews{
+        usrId: "",
+        bsId: "",
+        star: "",
+        price: "",
+        body: ""
+    }
+
+Modify review:
+    PATCH /reviews/{id}{
+        usrId: "",
+        bsId: "",
+        star: "",
+        price: "",
+        body: ""
+    }
+
+Delete review:
+    DELETE /reviews/{id}
+
+Add photo:
+    POST /reviews/photos/{
+        usrId: "",
+        bsId: "",
+        photo: "",
+        caption: ""
+    }
+
+Delete photo:
+    DELETE /reviews/photos/{id}
+
+List owned businesses:
+    GET /businesses{id}{
+        "businesses": [{
+            id: "",
+            name: "",
+            address: "",
+            city: "",
+            state: "",
+            zip: "",
+            phone: "",
+            category: "",
+            subCategory: "",
+            website: "",
+            email: ""
+        }]{...}
+    }
+
+List own reviews:
+    GET /reviews{id}{
+        "reviews": [{
+            id: "",
+            usrId: "",
+            bsId: "",
+            star: "",
+            price: "",
+            body: ""
+        }]{...}
+    }
+
+List own photos:
+    GET /reviews/photos{id}{
+        "photos": [{
+            id: "",
+            usrId: "",
+            bsId: "",
+            photo: "",
+            caption: ""
+        }]{...}
+    }

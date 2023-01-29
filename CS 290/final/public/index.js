@@ -31,7 +31,6 @@ function acceptClick(){
     clearInputs();
     addStoryModal();
   }
-  window.location.reload();
 }
 
 function clearInputs() {

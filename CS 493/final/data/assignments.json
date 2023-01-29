@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "courseId": "1",
+        "title": "Safety Review Quiz",
+        "points": "3",
+        "due": "2022-05-14T17:00:00-07:00"
+    },
+    {
+        "id": 2,
+        "courseId": "2", 
+        "title": "Assignment 2 API data storage",
+        "points": "100",
+        "due": "2022-06-14T17:00:00-07:00"
+    },
+    {
+        "id": 3,
+        "courseId": "2",
+        "title": "Assignment 3 API authentication and authorization",
+        "points": "100",
+        "due": "2022-07-14T17:00:00-07:00"
+    },
+    {
+        "id": 4,
+        "courseId": "3",
+        "title": "Wiring",
+        "points": "3",
+        "due": "2022-07-14T17:00:00-09:00"
+    },
+    {
+        "id": 5,
+        "courseId": "4",
+        "title": "OpenMP: Numeric integration",
+        "points": "100",
+        "due": "2022-13-14T17:00:00-07:00"
+    },
+    {
+        "id": 6,
+        "courseId": "4",
+        "title": "CUDA: Monte Carlo Simulation",
+        "points": "100",
+        "due": "2022-14-14T17:00:00-07:00"
+    }
+]

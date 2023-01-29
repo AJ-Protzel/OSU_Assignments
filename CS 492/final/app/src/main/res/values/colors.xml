@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="crater">#8E9089</color>
+    <color name="grey">#50555C</color>
+    <color name="solar_flare">#D3832B</color>
+    <color name="pine_stand">#4A773C</color>
+    <color name="high_tide">#00859B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
